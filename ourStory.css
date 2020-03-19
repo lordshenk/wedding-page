@@ -1,0 +1,230 @@
+body {
+	font-family: 'Josefin Sans', sans-serif;
+	overflow-y: scroll;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+.container-fluid .row:first-child .col {
+	background-image: url('https://i.imgur.com/UUm9SHK.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	width: 100vw;
+}
+
+
+.container-fluid .row .col .nav-item {
+	font-size: 10px;
+	font-weight: 400;
+	letter-spacing: 2px;
+}
+.navbar-dark, .container-fluid .row .col .text-white,
+.container-fluid .row .col .text {
+	z-index: 1;
+}
+.navbar-dark .navbar-nav .nav-link {
+	color: white;
+}
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:visited {
+	color: rgba(255,255,255,.5);
+}
+.container-fluid .row .col .btn {
+	border: 2px solid white;
+	border-radius: 0;
+	background-color: rgba(255,255,255,0);
+	color: white;
+}
+.container-fluid .row .col .btn:hover {
+	border: 2px solid rgba(255,255,255,.7);
+	color: rgba(255,255,255,.7);
+}
+.container-fluid .row .col .btn:focus {
+	box-shadow: 0 0 0 0 rgba(216,217,219,.5);
+}
+
+.container-fluid .row .col .text-white {
+	position: absolute;
+	font-size: 20px;
+	font-weight: 100;
+	width: 100%;
+	top: 230px;
+	font-size: 4.5rem;
+	text-align: center;
+	letter-spacing: 1.5rem;
+}
+.container-fluid .row .col .text {
+	position: absolute;
+	font-size: 20px;
+	font-weight: 400;
+	width: 100%;
+	top: 340px;
+	text-align: center;
+	color: rgba(255,255,255,0.7);
+}
+.container-fluid .row:first-child .col::after {
+	content: '';
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(131, 130, 143, 0.05);
+}
+
+.container-fluid .our-story {
+	width: 100vw;
+	height: 80vh;
+	background-color: #FFFFFF;
+}
+.container-fluid .our-story .col {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.container-fluid .our-story .col p:first-child {
+	font-size: 1.6rem;
+	color: rgb(50,50,50);
+	margin-bottom: 40px;
+}
+.container-fluid .our-story .col p:last-child {
+	text-align: center;
+	width: 70vw;
+	color: rgb(100, 100, 100);
+	line-height: 30px;
+	font-size: 1.1rem;
+}
+.container-fluid .proposed {
+	height: 100vh;
+	width: 100vw;
+	background-image: url('https://i.imgur.com/UkOiHPs.jpg');
+	background-size: cover;
+	background-position: center;
+	justify-content: center;
+	align-items: center;
+
+}
+.container-fluid .proposed div {
+	color: white;
+	font-size: 2.5rem;
+	font-weight: 300;
+	letter-spacing: 1rem;
+	margin: 20px;
+	text-align: center;
+}
+
+@media (max-width: 992px) {
+	.container-fluid .row .col .navbar-toggler {
+		position: absolute;
+		right: 140px;
+		outline: none;
+		border: none;
+	}
+
+	.container-fluid .row .col .navbar-collapse {
+		position: absolute;
+		right: 20px;
+		top: 100px;
+		background-color: #C2B0AE;
+		padding-left: 10px;
+	}
+	.navbar-dark .navbar-nav .nav-link:hover {
+		color: rgba(0,0,0,1);
+	}
+	.container-fluid .row .col .btn {
+		position: absolute;
+		right: 0vw;
+	}
+	.container-fluid .our-story {
+		width: 100vw;
+		height: 100vh;
+		background-color: #FFFFFF;
+	}
+	.container-fluid .proposed div {
+		color: white;
+		font-size: 2rem;
+		font-weight: 300;
+		letter-spacing: 0.5rem;
+	}
+}
+@media (max-width: 1200px) {
+	.container-fluid .row .col .text-white {
+		position: absolute;
+		font-weight: 100;
+		width: 100%;
+		top: 260px;
+		font-size: 2.5rem;
+		text-align: center;
+		letter-spacing: 1.5rem;
+	}
+}
+@media (max-width: 768px) {
+	.container-fluid .row .col .text-white {
+		position: absolute;
+		font-weight: 100;
+		width: 100%;
+		top: 300px;
+		font-size: 2.5rem;
+		text-align: center;
+		letter-spacing: 0.5rem;
+	}
+	.container-fluid .row .col .text {
+		position: absolute;
+		font-size: 20px;
+		font-weight: 400;
+		width: 100%;
+		top: 400px;
+		text-align: center;
+		color: rgba(255,255,255,0.7);
+	}
+	.container-fluid .row .col .navbar-collapse {
+		position: absolute;
+		right: 20px;
+		top: 100px;
+		background-color: #C2B0AE;
+		padding: 20px 20px 0 30px;
+	}
+	.container-fluid .proposed div {
+		color: white;
+		font-size: 1.7rem;
+		font-weight: 300;
+		letter-spacing: 0.5rem;
+		margin: 20px;
+		text-align: center;
+	}
+}
+@media (max-width: 576px) {
+	.container-fluid .row .col .text-white {
+		position: absolute;
+		font-weight: 100;
+		width: 100%;
+		top: 300px;
+		font-size: 2rem;
+		text-align: center;
+		letter-spacing: 0.5rem;
+	}
+	.container-fluid .row .col .text {
+		position: absolute;
+		font-size: 20px;
+		font-weight: 400;
+		width: 100%;
+		top: 350px;
+		text-align: center;
+		color: rgba(255,255,255,0.7);
+	}
+	.container-fluid .proposed {
+		height: 100vh;
+		width: 100vw;
+		background-image: url('https://i.imgur.com/UkOiHPs.jpg');
+		background-size: cover;
+		background-position: center;
+		justify-content: center;
+		align-items: flex-start;
+	}
+}
