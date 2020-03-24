@@ -1,0 +1,88 @@
+
+body {
+	font-family: 'Josefin Sans', sans-serif !important;
+	margin: 0;
+}
+.main {
+	position: relative;
+	overflow-x: hidden;
+
+}
+.rsvp-form {
+	height: 1200px;
+	background-image: url('https://i.imgur.com/UUm9SHK.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+}
+
+.rsvp-form > div:first-child {
+	font-size: 3rem;
+	font-weight: 200;
+	letter-spacing: 1rem;
+	color: white;
+	text-align: center;
+	position: relative;
+	top: 20px;
+}
+
+.message {
+	background-color: white;
+	width: 70vw;
+	position: relative;
+	margin: auto;
+	top: 80px;
+	padding: 0 5%;
+}
+
+.message > div {
+	text-align: center;
+	color: rgba(80,80,80,1);
+	padding: 50px 0 30px;
+	font-weight: 400;
+}
+
+.message .form-inline input {
+	width: 48%;
+}
+.message .form-inline input:nth-child(2) {
+	margin-right: auto;
+}
+.message .form-inline {
+	margin-bottom: 20px;
+}
+.message button {
+	margin: 50px 0;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.message input::placeholder,
+.message textarea::placeholder {
+	color: rgba(100,100,100,0.8);
+}
+.message textarea {
+	resize: none;
+}
+
+.dev {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: rgba(255,255,255,0.5);
+	background-color: #232323;
+	position: absolute;
+	bottom: 0;
+	width: 100vw;
+	height: 15vh;
+}
+
+@media (max-width: 768px) {
+	.message .form-inline input {
+		width: 100%;
+	}
+	.message .form-inline input:nth-child(2) {
+		margin-bottom: 20px;
+	}
+}

@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>RSVP</title>
+	<link rel="stylesheet" type="text/css" href="rsvp.css">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:200,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+	<div class="main">
+		<div class="rsvp-form">
+			<div>RSVP</div>
+			<div class="message">
+				<div>Please RSVP by November 15, 2029</div>
+				<form>
+					<div class="form-group">
+						<label for="email" class="sr-only">Email</label>
+						<input type="email" class="form-control" name="email" id="email" placeholder="Email Adress">
+					</div>
+				</form>
+				<form class="form-inline">
+					<label for="first-name" class="sr-only">
+						first name
+					</label>
+					<input type="text" name="first-name" id="first-name" class="form-control" placeholder="First name">
+					<label for="last-name" class="sr-only">
+						last name
+					</label>
+					<input type="text" name="last-name" id="last-name" class="form-control" placeholder="Last name">
+				</form>
+				<form class="form-inline">
+					<label for="attending" class="sr-only">
+						are you attending
+					</label>
+					<input type="text" name="attending" id="attending" class="form-control" placeholder="Are you attending?">
+					<label for="who-else" class="sr-only">
+						who else are come with you
+					</label>
+					<input type="text" name="who-else" id="who-else" class="form-control" placeholder="Who else are come with you?">
+				</form>
+				<form>
+					<div class="form-group">
+						<label for="message-text" class="sr-only">
+							Message
+						</label>
+						<textarea class="form-control" id="message-text" placeholder="Message" rows="7"></textarea>
+					</div>
+				</form>
+				<form>
+					<div class="form-check">
+						
+						<input type="checkbox" class="form-check-input" id="subscribe"></input>
+						<label for="subscribe">
+							Subscribe to our newsletter
+						</label>
+					</div>
+				</form>
+				<button class="btn btn-danger">Send Message</button>
+			</div>
+			
+		</div>
+		<div class="dev">
+				<div>Created by S1mple 03/2020.</div>
+		</div>
+	</div>
+</body>
+</html>
