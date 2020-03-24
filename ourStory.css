@@ -6,6 +6,10 @@ body {
 	overflow-x: hidden;
 }
 
+.container-fluid {
+	overflow-x: hidden;
+}
+
 .container-fluid .row:first-child .col {
 	background-image: url('https://i.imgur.com/UUm9SHK.jpg');
 	background-size: cover;
@@ -76,8 +80,9 @@ body {
 }
 
 .container-fluid .our-story {
+	margin: inherit;
 	width: 100vw;
-	height: 80vh;
+	height: 1000px;
 	background-color: #FFFFFF;
 }
 .container-fluid .our-story .col {
@@ -105,6 +110,7 @@ body {
 	text-decoration: none;
 }
 .container-fluid .proposed {
+	margin: inherit;
 	height: 100vh;
 	width: 100vw;
 	background-image: url('https://i.imgur.com/UkOiHPs.jpg');
@@ -147,7 +153,7 @@ body {
 	}
 	.container-fluid .our-story {
 		width: 100vw;
-		height: 100vh;
+		/*height: 100vh;*/
 		background-color: #FFFFFF;
 	}
 	.container-fluid .proposed div {
@@ -215,10 +221,10 @@ body {
 	}
 	.container-fluid .row .col .text {
 		position: absolute;
-		font-size: 20px;
+		font-size: 1rem;
 		font-weight: 400;
 		width: 100%;
-		top: 350px;
+		top: 400px;
 		text-align: center;
 		color: rgba(255,255,255,0.7);
 	}
@@ -230,5 +236,15 @@ body {
 		background-position: center;
 		justify-content: center;
 		align-items: flex-start;
+	}
+	.navbar-brand {
+		display: none;
+	}
+	.container-fluid .row .col .navbar-collapse {
+	    top: 80px;
+	}
+	.container-fluid .row .col .btn,
+	.container-fluid .row .col .navbar-toggler {
+		top: 20px;
 	}
 }
