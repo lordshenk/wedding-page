@@ -1,3 +1,3 @@
 
-#Wedding page
+# Wedding page
 Original: https://demo.kallyas.net/wedding/
