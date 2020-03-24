@@ -1,4 +1,7 @@
 
+html {
+	scroll-behavior: smooth;
+}
 
 .btn-back-top {
 	display: none;
@@ -8,10 +11,15 @@
 	background-color: rgba(0,0,0,.5);
 	font-size: 20px;
 	border: none;
-	outline: none;
 	width: 50px;
 	height: 50px;
 	border-radius: 5px;
+}
+.btn-back-top:hover {
+	background-color: rgba(0,0,0,.7);
+}
+.btn-back-top:focus {
+	outline: none;
 }
 .btn-back-top i {
 	color: rgba(255,255,255,0.8);
