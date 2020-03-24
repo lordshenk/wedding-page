@@ -109,6 +109,9 @@ body {
 	color: white;
 	text-decoration: none;
 }
+.container-fluid .row .col .btn:hover a {
+	opacity: 0.7;
+}
 .container-fluid .proposed {
 	margin: inherit;
 	height: 100vh;
