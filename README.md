@@ -2,4 +2,4 @@
 # Wedding page
 Original: https://demo.kallyas.net/wedding/
 
-Project: https://s9mple.github.io/wedding-page/
+Project: https://lordshenk.github.io/wedding-page/
